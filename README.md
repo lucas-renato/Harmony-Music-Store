@@ -2,15 +2,10 @@
 
 **Projeto:** Loja de artigos musicais online  
 **Frontend:** Next.js + Tailwind CSS  
-**Backend:** Django + Django REST Framework  
-
----
+**Backend:** Django + Django REST Framework
 
 ## 📖 Descrição
-O Harmony Music Store é uma aplicação web que permite aos usuários navegar, buscar e comprar artigos musicais.  
-O projeto foi desenvolvido como trabalho acadêmico, com o objetivo de praticar integração entre **frontend moderno (Next.js)** e **backend robusto (Django)**, incluindo APIs REST para gerenciamento de produtos.
-
----
+O Harmony Music Store é uma aplicação web que permite aos usuários navegar, buscar e comprar artigos musicais. O projeto foi desenvolvido como trabalho acadêmico, com o objetivo de praticar integração entre frontend moderno (Next.js) e backend robusto (Django), incluindo APIs REST para gerenciamento de produtos.
 
 ## 🗂 Estrutura do Projeto
 Harmony-Music-Store/  
@@ -22,72 +17,36 @@ Harmony-Music-Store/
 │   ├── manage.py  
 │   ├── backend/  
 │   └── ...  
-└── README.md        # Este arquivo  
-
----
+└── README.md        # Este arquivo
 
 ## ⚡ Tecnologias
-
 ### Frontend
-- [Next.js](https://nextjs.org/)  
-- [React](https://reactjs.org/)  
-- [Tailwind CSS](https://tailwindcss.com/)  
+- Next.js  
+- React  
+- Tailwind CSS  
 
 ### Backend
-- [Python](https://www.python.org/)  
-- [Django](https://www.djangoproject.com/)  
-- [Django REST Framework](https://www.django-rest-framework.org/)  
-
----
+- Python  
+- Django  
+- Django REST Framework  
 
 ## 🚀 Como rodar o projeto
-
 ### Frontend (Next.js)
-1. Navegue até a pasta frontend:
-   ```bash
-   cd frontend
-Instale as dependências:
+1. Navegue até a pasta frontend: `cd frontend`  
+2. Instale as dependências: `npm install`  
+3. Rode o servidor de desenvolvimento: `npm run dev`  
+4. Abra [http://localhost:3000](http://localhost:3000) no navegador  
 
-bash
-Copiar código
-npm install
-Rode o servidor de desenvolvimento:
+### Backend (Django)
+1. Navegue até a pasta backend: `cd backend`  
+2. Crie e ative o ambiente virtual: `python -m venv venv` e `venv\Scripts\activate`  
+3. Instale as dependências: `pip install -r requirements.txt`  
+   > Se não tiver `requirements.txt`, instale manualmente: `pip install django djangorestframework`  
+4. Rode as migrations: `python manage.py migrate`  
+5. Inicie o servidor: `python manage.py runserver`  
+6. O backend estará disponível em [http://localhost:8000](http://localhost:8000)  
 
-bash
-Copiar código
-npm run dev
-Abra http://localhost:3000 no navegador.
-
-Backend (Django)
-Navegue até a pasta backend:
-
-bash
-Copiar código
-cd backend
-Crie e ative o ambiente virtual:
-
-bash
-Copiar código
-python -m venv venv
-venv\Scripts\activate
-Instale as dependências:
-
-bash
-Copiar código
-pip install -r requirements.txt
-Se não tiver requirements.txt, instale manualmente:
-
-bash
-Copiar código
-pip install django djangorestframework
-Rode as migrations:
-
-bash
-Copiar código
-python manage.py migrate
-Inicie o servidor de desenvolvimento:
-
-bash
-Copiar código
-python manage.py runserver
-O backend estará disponível em http://localhost:8000
+## 🔧 Observações
+- Frontend e backend são separados, mas integráveis via APIs REST  
+- Mantenha `.gitignore` configurado para não subir `node_modules/` e `__pycache__/`  
+- Ideal para estudos de integração fullstack
