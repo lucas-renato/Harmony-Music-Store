@@ -17,7 +17,7 @@ Harmony-Music-Store/
 │   ├── manage.py  
 │   ├── backend/  
 │   └── ...  
-└── README.md        # Este arquivo
+└── README.md     
 
 ## ⚡ Tecnologias
 ### Frontend
