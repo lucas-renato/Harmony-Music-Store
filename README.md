@@ -4,7 +4,7 @@
 **Frontend:** Next.js + Tailwind CSS  
 **Backend:** Django + Django REST Framework
 
-## 📖 Descrição
+##  Descrição
 O Harmony Music Store é uma aplicação web que permite aos usuários navegar, buscar e comprar artigos musicais. O projeto foi desenvolvido como trabalho acadêmico, com o objetivo de praticar integração entre frontend moderno (Next.js) e backend robusto (Django), incluindo APIs REST para gerenciamento de produtos.
 
 ## 🗂 Estrutura do Projeto
