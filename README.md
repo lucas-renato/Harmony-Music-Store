@@ -1,5 +1,4 @@
 # Harmony Music Store 🎵
-
 **Projeto:** Loja de artigos musicais online  
 **Frontend:** Next.js + Tailwind CSS  
 **Backend:** Django + Django REST Framework
