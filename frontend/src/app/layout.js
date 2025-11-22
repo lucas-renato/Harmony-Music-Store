@@ -1,35 +1,42 @@
+import Link from "next/link";
 import "./globals.css";
-
-export const metadata = {
-  title: "Harmony Music Store",
-  description: "A sua loja de instrumentos musicais 🎵",
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
         <header>
-          <nav>
-            <h1>Harmony Music Store</h1>
-            <ul>
-              <li>
-                <a href="/">Início</a>
-              </li>
-              <li>
-                <a href="/produtos">Produtos</a>
-              </li>
-              <li>
-                <a href="/sobre">Sobre</a>
-              </li>
-              <li>
-                <a href="/contato">Contato</a>
-              </li>
-            </ul>
+          <nav className="navbar">
+            {/* ESQUERDA - logo e links */}
+            <div className="nav-left">
+              <h1>Harmony Music Store</h1>
+              <ul>
+                <li>
+                  <a href="/">Início</a>
+                </li>
+                <li>
+                  <a href="/loja">Loja</a>
+                  <Link href="/loja"></Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* CENTRO - barra de pesquisa */}
+            <div className="nav-center">
+              <input
+                type="text"
+                placeholder="Buscar instrumentos..."
+                className="search-bar"
+              />
+            </div>
+
+            {/* DIREITA - ícones */}
+            <div className="nav-right">
+              <img src="/heart.png" alt="Favoritos" className="icon" />
+              <img src="/cart.png" alt="Carrinho" className="icon" />
+            </div>
           </nav>
         </header>
-
-        <main>{children}</main>
 
         <footer>
           <div className="footer-container">
