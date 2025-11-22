@@ -12,11 +12,10 @@ export default function RootLayout({ children }) {
               <h1>Harmony Music Store</h1>
               <ul>
                 <li>
-                  <a href="/">Início</a>
+                  <Link href="/">Início</Link>
                 </li>
                 <li>
-                  <a href="/loja">Loja</a>
-                  <Link href="/loja"></Link>
+                  <Link href="/loja">Loja</Link>
                 </li>
               </ul>
             </div>
@@ -37,6 +36,9 @@ export default function RootLayout({ children }) {
             </div>
           </nav>
         </header>
+
+        {/* 🚀 AQUI ESTÁ O MAIN QUE FALTAVA */}
+        <main>{children}</main>
 
         <footer>
           <div className="footer-container">
