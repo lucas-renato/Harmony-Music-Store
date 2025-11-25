@@ -18,8 +18,8 @@ body {
 
 /* HEADER */
 header {
-  background-color: #111;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 1rem 2rem;
 }
 
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: rgb(3, 3, 3);
   text-decoration: none;
   font-weight: 500;
 }

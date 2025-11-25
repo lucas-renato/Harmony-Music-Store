@@ -9,7 +9,6 @@ export default function RootLayout({ children }) {
           <nav className="navbar">
             {/* ESQUERDA - logo e links */}
             <div className="nav-left">
-              <h1>Harmony Music Store</h1>
               <ul>
                 <li>
                   <Link href="/">Início</Link>
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
 
             {/* DIREITA - ícones */}
             <div className="nav-right">
-              <img src="/heart.png" alt="Favoritos" className="icon" />
+              <img src="/coracao.png" alt="Favoritos" className="icon" />
               <img src="/cart.png" alt="Carrinho" className="icon" />
             </div>
           </nav>
