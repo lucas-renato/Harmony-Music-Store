@@ -73,7 +73,7 @@ main {
 /* FOOTER */
 footer {
   background-color: #faf4f4; /* Fundo solicitado */
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   font-size: 0.95rem;
   border-top: 1px solid #e0e0e0;
 }
@@ -158,4 +158,16 @@ footer {
 .search-wrapper img {
   width: 18px;
   filter: invert(100%);
+}
+.logo {
+  height: 100px; /* ajuste o tamanho */
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+.navbar {
+  height: 70px; /* pode testar: 60, 65, etc */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

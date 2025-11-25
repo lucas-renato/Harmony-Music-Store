@@ -9,6 +9,8 @@ export default function RootLayout({ children }) {
           <nav className="navbar">
             {/* ESQUERDA - logo e links */}
             <div className="nav-left">
+              <img src="/logohms.jpg" alt="Logo HMS" className="logo" />
+
               <ul>
                 <li>
                   <Link href="/">Início</Link>
