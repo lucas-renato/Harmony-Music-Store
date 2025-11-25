@@ -21,11 +21,12 @@ export default function RootLayout({ children }) {
 
             {/* CENTRO - barra de pesquisa */}
             <div className="nav-center">
-              <input
-                type="text"
-                placeholder="Buscar instrumentos..."
-                className="search-bar"
-              />
+              <div className="search-wrapper">
+                <input type="text" placeholder="Buscar instrumentos..." />
+                <button>
+                  <img src="/lupa.png" alt="Buscar" />
+                </button>
+              </div>
             </div>
 
             {/* DIREITA - ícones */}
