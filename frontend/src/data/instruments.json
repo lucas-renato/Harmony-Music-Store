@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Guitarra Fender Stratocaster",
+    "price": 4299.0,
+    "category": "Cordas",
+    "description": "Guitarra elétrica com timbre brilhante e versátil.",
+    "image": "/instruments/guitarrafender.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Guitarra Gibson Les Paul Studio",
+    "price": 5899.0,
+    "category": "Cordas",
+    "description": "Modelo clássico com sustain poderoso.",
+    "image": "/instruments/guitarragibson.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Violão Yamaha C40",
+    "price": 899.0,
+    "category": "Cordas",
+    "description": "Violão clássico ideal para iniciantes.",
+    "image": "/instruments/violaoyamahac40.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Violino 4/4 Michael",
+    "price": 799.0,
+    "category": "Cordas",
+    "description": "Violino acústico com ótimo custo-benefício.",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Baixo Jazz Bass Fender",
+    "price": 3999.0,
+    "category": "Cordas",
+    "description": "Baixo de 4 cordas com timbre encorpado.",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Teclado Yamaha PSR-F52",
+    "price": 1299.0,
+    "category": "Teclas",
+    "description": "Teclado portátil com ritmos variados.",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Piano Digital Casio CDP-S150",
+    "price": 2899.0,
+    "category": "Teclas",
+    "description": "88 teclas pesadas, ideal para estudo.",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Controlador MIDI Akai MPK Mini",
+    "price": 699.0,
+    "category": "Teclas",
+    "description": "Controlador compacto para produção musical.",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Bateria Acústica Pearl Export",
+    "price": 4999.0,
+    "category": "Percussão",
+    "description": "Kit completo com excelente construção.",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Bateria Eletrônica Roland TD-1K",
+    "price": 3599.0,
+    "category": "Percussão",
+    "description": "Bateria eletrônica compacta com sons realistas.",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "name": "Cajón Fsa Standard",
+    "price": 399.0,
+    "category": "Percussão",
+    "description": "Cajón com grave forte e resposta rápida.",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "name": "Tamborim Contemporânea",
+    "price": 89.9,
+    "category": "Percussão",
+    "description": "Ideal para samba e ritmos brasileiros.",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "name": "Saxofone Alto Yamaha YAS-26",
+    "price": 7899.0,
+    "category": "Sopro",
+    "description": "Saxofone leve e de fácil emissão.",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "name": "Trompete Bach TR300H2",
+    "price": 2999.0,
+    "category": "Sopro",
+    "description": "Trompete estudantil de alta qualidade.",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "name": "Flauta Doce Yamaha Barroca",
+    "price": 49.99,
+    "category": "Sopro",
+    "description": "Ótima escolha para iniciantes.",
+    "image": ""
+  },
+  {
+    "id": 16,
+    "name": "Ukulele Mahalo Art Series",
+    "price": 259.0,
+    "category": "Cordas",
+    "description": "Ukulele soprano para iniciantes.",
+    "image": ""
+  },
+  {
+    "id": 17,
+    "name": "Acordeon 80 Baixos Hohner Bravo",
+    "price": 7499.0,
+    "category": "Teclas",
+    "description": "Acordeon profissional com ótima projeção.",
+    "image": ""
+  },
+  {
+    "id": 18,
+    "name": "Mesa de Som Behringer Xenyx 1202",
+    "price": 899.0,
+    "category": "Áudio",
+    "description": "Mesa de 12 entradas com efeitos.",
+    "image": ""
+  },
+  {
+    "id": 19,
+    "name": "Microfone Shure SM58",
+    "price": 799.0,
+    "category": "Áudio",
+    "description": "Microfone vocal padrão mundial.",
+    "image": ""
+  },
+  {
+    "id": 20,
+    "name": "Amplificador Marshall MG15GR",
+    "price": 1199.0,
+    "category": "Amplificadores",
+    "description": "Amp de guitarra com reverb embutido.",
+    "image": ""
+  }
+]

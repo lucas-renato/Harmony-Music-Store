@@ -21,19 +21,19 @@ export default function HomePage() {
 
         <div className="carousel">
           <div className="product-card">
-            <img src="/guitarrafender.jpg" alt="Guitarra" />
+            <img src="/instruments/guitarrafender.jpg" alt="Guitarra" />
             <h3>Guitarra Fender</h3>
             <p>R$ 1.999</p>
           </div>
 
           <div className="product-card">
-            <img src="/tecladoyamaha.jpg" alt="Teclado" />
+            <img src="/instruments/tecladoyamaha.jpg" alt="Teclado" />
             <h3>Teclado Yamaha</h3>
             <p>R$ 1.299</p>
           </div>
 
           <div className="product-card">
-            <img src="/violino.jpg" alt="Violino" />
+            <img src="/instruments/violino.jpg" alt="Violino" />
             <h3>Violino 4/4</h3>
             <p>R$ 899</p>
           </div>
