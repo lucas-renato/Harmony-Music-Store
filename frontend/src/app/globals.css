@@ -171,3 +171,102 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
+/* 🌟 HERO BANNER */
+.hero {
+  width: 100%;
+  height: 40vh;
+  background: url("/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-content p {
+  color: #eee;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #000;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  background: #ba2b2b;
+}
+
+/* 🎠 CARROSSEL */
+.carousel-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ⭐ DEPOIMENTOS */
+.testimonials {
+  margin-top: 5rem;
+  background: #fafafa;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
