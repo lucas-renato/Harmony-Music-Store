@@ -350,3 +350,52 @@ footer {
 .details-btn:hover {
   background: #f4a907;
 }
+
+.filter-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* CENTRALIZA O FILTRO */
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* Select do filtro */
+.filter-select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filter-select:hover {
+  background: #f4f4f4;
+}
+
+.filter-wrapper label {
+  font-size: 1rem;
+  color: #333;
+}
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #555;
+}

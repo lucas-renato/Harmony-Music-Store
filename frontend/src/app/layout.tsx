@@ -1,6 +1,10 @@
 import Link from "next/link";
 import "./globals.css";
-
+export const metadata = {
+  icons: {
+    icon: "/favicon.png",
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
@@ -23,12 +27,16 @@ export default function RootLayout({ children }) {
 
             {/* CENTRO - barra de pesquisa */}
             <div className="nav-center">
-              <div className="search-wrapper">
-                <input type="text" placeholder="Buscar instrumentos..." />
-                <button>
+              <form action="/loja" className="search-wrapper">
+                <input
+                  name="search"
+                  type="text"
+                  placeholder="Buscar instrumentos..."
+                />
+                <button type="submit">
                   <img src="/lupa.png" alt="Buscar" />
                 </button>
-              </div>
+              </form>
             </div>
 
             {/* DIREITA - ícones */}
