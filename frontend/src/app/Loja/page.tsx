@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import instruments from "@/data/instruments.json";
+import Link from "next/link";
 
 export default function Loja() {
   const searchParams = useSearchParams();
@@ -45,19 +46,47 @@ export default function Loja() {
 
       <div className="store-grid">
         {filteredItems.length > 0 ? (
-          filteredItems.map((item) => (
-            <div key={item.id} className="product-card">
-              <img src={item.image} alt={item.name} className="product-image" />
-              <div className="product-info">
-                <h2>{item.name}</h2>
-                <p className="category">{item.category}</p>
-                <p className="price">R$ {item.price.toFixed(2)}</p>
-                <button className="details-btn">Ver detalhes</button>
+          filteredItems.map((item) => {
+            // mapeia o "slug" da página manualmente
+            let slug = "";
+            switch (item.id) {
+              case 1:
+                slug = "guitarrafender";
+                break;
+              case 2:
+                slug = "guitarra-gibson";
+                break;
+              case 3:
+                slug = "violao-yamaha-c40";
+                break;
+              // ... e assim por diante para cada instrumento que tiver página
+              default:
+                slug = "";
+            }
+
+            return (
+              <div key={item.id} className="product-card">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="product-image"
+                />
+                <div className="product-info">
+                  <h2>{item.name}</h2>
+                  <p className="category">{item.category}</p>
+                  <p className="price">R$ {item.price.toFixed(2)}</p>
+
+                  {slug && (
+                    <Link href={`/loja/instrumentos/${slug}`}>
+                      <button className="details-btn">Ver detalhes</button>
+                    </Link>
+                  )}
+                </div>
               </div>
-            </div>
-          ))
+            );
+          })
         ) : (
-          <p className="no-results">Nenhum item encontrado.</p>
+          <p>Nenhum produto encontrado.</p>
         )}
       </div>
     </section>
