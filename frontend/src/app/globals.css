@@ -281,7 +281,6 @@ footer {
   font-weight: bold;
   margin-bottom: 40px;
 }
-
 /* GRID de produtos */
 .store-grid {
   display: grid;
@@ -296,10 +295,9 @@ footer {
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease;
-}
 
-.product-card:hover {
-  transform: translateY(-5px);
+  display: flex; /* <- Aqui */
+  flex-direction: column; /* <- Organiza em coluna */
 }
 
 /* Imagem */
@@ -312,6 +310,9 @@ footer {
 /* Informações */
 .product-info {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* <- Faz o conteúdo ocupar o espaço */
 }
 
 .product-info h2 {
@@ -328,23 +329,24 @@ footer {
   margin-top: 10px;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #e72f2f;
+  color: #000000;
 }
 
 /* Botão */
 .details-btn {
   width: 100%;
-  margin-top: 15px;
   padding: 10px;
-  background: #2563eb;
-  color: white;
-  border: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
   transition: background 0.2s ease;
+
+  margin-top: auto; /* <- Alinha o botão sempre no final */
 }
 
 .details-btn:hover {
-  background: #1d4ed8;
+  background: #f4a907;
 }
