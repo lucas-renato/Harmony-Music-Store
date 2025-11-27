@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Product {
   id: number;
@@ -15,10 +15,31 @@ export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/products/")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Erro ao buscar produtos:", err));
+    // Produtos mockados direto no front
+    const data: Product[] = [
+      {
+        id: 1,
+        name: "Guitarra Fender",
+        description: "Elétrica",
+        price: 2500,
+        image: "/instruments/guitarrafender.jpg",
+      },
+      {
+        id: 2,
+        name: "Baixo Ibanez",
+        description: "4 cordas",
+        price: 1800,
+        image: "/instruments/baixojazz.jpg",
+      },
+      {
+        id: 3,
+        name: "Teclado Yamaha",
+        description: "61 teclas",
+        price: 1200,
+        image: "/instruments/tecladoyamaha.jpg",
+      },
+    ];
+    setProducts(data);
   }, []);
 
   return (
@@ -34,7 +55,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 🎠 CARROSSEL DE DESTAQUES (AGORA DINÂMICO) */}
+      {/* 🎠 CARROSSEL DE DESTAQUES */}
       <section className="carousel-section">
         <h2>Destaques da Semana</h2>
 
@@ -45,9 +66,7 @@ export default function HomePage() {
             <div className="product-card" key={product.id}>
               <img
                 src={
-                  product.image
-                    ? product.image
-                    : "/instruments/placeholder.jpg"
+                  product.image ? product.image : "/instruments/placeholder.jpg"
                 }
                 alt={product.name}
               />

@@ -41,8 +41,12 @@ export default function RootLayout({ children }) {
 
             {/* DIREITA - ícones */}
             <div className="nav-right">
-              <img src="/coracao.png" alt="Favoritos" className="icon" />
-              <img src="/cart.png" alt="Carrinho" className="icon" />
+              <Link href="/favoritos">
+                <img src="/coracao.png" alt="Favoritos" className="icon" />
+              </Link>
+              <Link href="/cart">
+                <img src="/cart.png" alt="Carrinho" className="icon" />
+              </Link>
             </div>
           </nav>
         </header>
