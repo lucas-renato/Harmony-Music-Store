@@ -48,3 +48,15 @@ export default function Favoritos() {
     </section>
   );
 }
+      </section>
+
+      {/* 📦 SEÇÃO DE PRODUTOS */   }   
+      <section className="store-section"></section>
+        <h2 className="store-title">Nossos Produtos</h2>
+        <div className="store-grid">
+          {products.length === 0 && <p>Nenhum produto disponível.</p>}
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <img  
+
+                
